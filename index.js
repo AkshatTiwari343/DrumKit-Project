@@ -51,9 +51,9 @@ var num =document.querySelectorAll(".drum").length;
 for(var i=0;i<num;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",function(){
       var buttonInnerHtml= this.innerHTML;
-      makeSound(buttonInnerHtml);
-    })
-
+    }
+ makeSound(buttonInnerHtml);
+});
 function makeSound(key){
   switch(key){
       case 'w':
