@@ -95,5 +95,8 @@ function keyPressed(event){
   buttonAnimation(even.key);
 }
 function buttonAnimation(currentKey){
-  
-}
+  var activeButton=document.querySelector("."+currentKey).classList.add("pressed");
+  setInterval(function(){
+    document.querySelector("."+currentKey).classList.remove("pressed");
+  },100);
+} 
