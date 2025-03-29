@@ -51,7 +51,7 @@ var num =document.querySelectorAll(".drum").length;
 for(var i=0;i<num;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",function(){
       var buttonInnerHtml= this.innerHTML;
-      makesound(buttonInnerHtml);
+      makeSound(buttonInnerHtml);
     })
 
 function makeSound(key){
