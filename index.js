@@ -92,7 +92,7 @@ function makeSound(key){
 document.addEventListener("keypress",keyPressed);
 function keyPressed(event){
   makeSound(event.key);
-  buttonAnimation(even.key);
+  buttonAnimation(event.key);
 }
 function buttonAnimation(currentKey){
   var activeButton=document.querySelector("."+currentKey).classList.add("pressed");
